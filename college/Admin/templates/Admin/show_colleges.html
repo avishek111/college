@@ -1,0 +1,66 @@
+{% extends 'admin-layout.html' %}
+{% block title %}
+<title>All Colleges</title>
+{% endblock%}
+
+{% block main_content %}
+<div class="container">
+    <div class="row">
+
+
+        <div class="col-md-10 offset-md-1">
+            <h1 class="text-center">All Colleges</h1>
+            {% include 'messages.html' %}
+            <div class="card py-2 px-2">
+                <a class="btn btn-dark btn-sm ms-auto"
+                href="/add_college"
+                >Add New College</a>
+                <div class="card card-body">
+                    <form class="form" method="get">
+                        {{location_filter.form}}
+        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    </div>
+
+
+                <table class="table-striped">
+                    <tr>
+                        <th>College Name</th>
+                        <th>level</th>
+                        <th>Location</th>
+                        <th>Type</th>
+                        <th>Popularity</th>
+                        <th>Annual_cost</th>
+                        <th>Image</th>
+                    </tr>
+                    {% for i in colleges %}
+                    <tr>
+                        <td> {{ i.college_name }}</td>
+                        <td> {{ i.college_level }}</td>
+                        <td> {{ i.college_location }}</td>
+                        <td> {{ i.college_type}}</td>
+                         <td> {{ i.college_popularity}}</td>
+                         <td> {{ i.college_annual_cost}}</td>
+                        <td><img src="/{{i.college_image}}" class="card-img-top" alt="..." style="width:100px"></td>
+                        <td><a class="btn btn-dark btn-sm" href="/update_college/{{i.id}}">Edit</a> &nbsp;
+                            <a class="btn btn-danger btn-sm"
+                               href="/delete_college/{{i.id}}"
+                               onclick="return confirm('Are you sure want to delete this college?')" >Delete</a></td>
+
+                    </tr>
+                    {% endfor %}
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+    function ShowHideDiv(chkPassport) {
+        var dvPassport = document.getElementById("dvPassport");
+        dvPassport.style.display = chkPassport.checked ? "block" : "none";
+    }
+</script>
+
+{% endblock %}
+

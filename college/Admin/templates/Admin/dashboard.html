@@ -1,0 +1,40 @@
+{%extends 'admin-layout.html'%}
+{%load static%}
+{%block title%}
+<title>dashboard</title>
+{%endblock title%}
+{%block main_content%}
+<div class="row">
+  <div class="col-sm-4">
+<div class="card" style="width: 18rem;margin:40px;">
+
+  <img src="static/images/college1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Location</h5>
+
+    <a href="/show_location_college" class="btn btn-primary">Locations</a>
+  </div>
+  </div>
+</div>
+  <div class="col-sm-4">
+<div class="card" style="width: 18rem;margin:40px;">
+  <img src="static/images/college1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">College Name</h5>
+
+    <a href="#" class="btn btn-primary">Name</a>
+  </div>
+</div>
+  </div>
+    <div class="col-sm-4">
+<div class="card" style="width: 18rem;margin:40px;">
+  <img src="static/images/college1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Required money</h5>
+
+    <a href="#" class="btn btn-primary">Money</a>
+  </div>
+</div>
+</div>
+</div>
+{%endblock main_content%}
