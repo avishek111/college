@@ -14,7 +14,11 @@ urlpatterns =[
     path('update_college/<int:college_id>', views.update_college),
     path('delete_college/<int:college_id>', views.delete_college),
 
-    path('show_location_college/',views.show_location_college)
+    path('show_location_college/',views.show_location_college),
+    path('khabar/',views.khabar),
+
+    path('show_locations/',views.show_locations),
+    path('add_locations/',views.add_locations),
 
 
 ]

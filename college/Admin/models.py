@@ -23,3 +23,12 @@ class Colleges(models.Model):
 
     def __str__(self):
         return self.college_name
+
+
+class Locations(models.Model):
+    location_name=models.CharField(max_length=200,null=True)
+    college_name=models.CharField(max_length=200,null=True)
+    stream=models.CharField(max_length=200,null=True)
+
+    def __str__(self):
+        return self.location_name

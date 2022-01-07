@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 from django.shortcuts import render, redirect
-from .form import CategoryForm, CollegeForm
-from .models import Category, Colleges
+from .form import CategoryForm, CollegeForm, LocationForm
+from .models import Category, Colleges, Locations
 from django.contrib import messages
 from .filters import LocationFilter
 from django.contrib.auth.decorators import login_required
@@ -131,3 +131,41 @@ def show_location_college(request):
         'activate_college': 'active'
     }
     return render(request,'Admin/show_location_college.html',context)
+
+
+def khabar(request):
+    locations = Locations.objects.all().order_by('-id')
+    context = {
+        'locations': locations,
+        # 'location_filter': location_filter,
+        'activate_college': 'active'
+    }
+    return render(request, 'Admin/khabar.html', context)
+
+# to get the data of location and college
+
+def add_locations(request):
+    if request.method == "POST":
+        form = LocationForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.add_message(request, messages.SUCCESS, 'Details added successfully')
+            return redirect("/show_category")
+        else:
+            messages.add_message(request, messages.ERROR, 'Unable to add details')
+            return render(request, 'Admin/add_locations.html', {'add_locations':form})
+    context ={
+        'form_locations': LocationForm,
+        'activate_category': 'active'
+    }
+    return render(request, 'Admin/add_locations.html', context)
+
+
+def show_locations(request):
+    locations = Locations.objects.all().order_by('-id')
+    context = {
+        'locations': locations,
+        # 'location_filter': location_filter,
+        'activate_college': 'active'
+    }
+    return render(request, 'Admin/show_locations.html', context)

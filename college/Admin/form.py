@@ -1,6 +1,6 @@
 
 from django.forms import ModelForm
-from .models import Category, Colleges
+from .models import Category, Colleges, Locations
 
 
 class CategoryForm(ModelForm):
@@ -13,3 +13,8 @@ class CollegeForm(ModelForm):
     class Meta:
         model = Colleges
         fields = "__all__"
+
+class LocationForm(ModelForm):
+    class Meta:
+        model = Locations
+        fields= "__all__"
