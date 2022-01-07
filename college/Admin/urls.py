@@ -20,5 +20,7 @@ urlpatterns =[
     path('show_locations/',views.show_locations),
     path('add_locations/',views.add_locations),
 
+    path('cd/',views.front),
+
 
 ]

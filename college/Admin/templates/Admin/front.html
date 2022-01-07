@@ -1,0 +1,1340 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+            <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Find and apply for colleges in India - CollegeKhabri</title>
+
+
+        <link rel="stylesheet" type="text/css" href="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/slick/slick-theme.css?v=1.0.1">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css?v=1.0.1">
+        <link rel="stylesheet" type="text/css" href="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/hk-card.min.css?v=1.0.1">
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css?v=1.0.1">
+        <link href="//fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Mirza:600" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/main.min.css?v=1.0.1">
+        <link rel="stylesheet" type="text/css" href="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/footer.min.css?v=1.0.1">
+        <link rel="stylesheet" type="text/css" href="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/style.min.css?v=1.0.1">
+        <link rel="stylesheet" type="text/css" href="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/jQuery-plugin-progressbar.min.css?v=1.0.1">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css?v=1.0.1">
+        <link rel="manifest" href="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/pwa/manifest.json" />
+        <script>
+        window.Laravel = {"csrfToken":"pGe7LdtvpgFec3cwRk3mj3wL6XZ9xJ4aNmQm5b1h"}
+        function base_url(){
+            return 'https://collegekhabri.com';
+        }
+        </script>
+        <!-- Facebook Pixel Code -->
+                <link rel="stylesheet" type="text/css" href="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/sweetalert2/6.3.2/sweetalert2.css">
+<link rel="stylesheet" href="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/static-assets/static-assets/custom.css" />
+<style>
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.khabri-heading-big {
+    line-height: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+.amount {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+.add_wish_list:hover{
+    cursor: pointer;
+    background: #ffcc29;
+}
+.confusedLeft > img:hover {
+    cursor: pointer;
+}
+.confusedLeft > span:hover {
+    cursor: pointer;
+}
+.search_btn {
+    padding: 10px 16px;
+    font-size: 18px;
+}
+#autoComplete{
+    background: #fff;
+    display: none;
+}
+@media (min-width: 320px) {
+    #tag_line {
+        font-size: 9px;
+    }
+    p#tag_line {
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) {
+    #tag_line {
+        font-size: 15px;
+    }
+}
+@media (min-width: 992px) {
+    #tag_line {
+        font-size: 18px;
+    }
+    p#tag_line {
+        font-size: 25px;
+    }
+}
+#autoComplete li{
+    text-align: left;
+}
+#autoComplete li a{
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+#autoComplete li a:hover{
+    background: #eee;
+}
+.cont  {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+.middle {
+  transition: .5s ease;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.cont:hover {
+    box-shadow: 0 0 30px #000;
+    transition: 0.5s;
+    cursor: pointer;
+    top:5px;
+}
+.text {
+  color: white;
+  background-color: #ffcc29;
+  font-size: 16px;
+  padding: 10px;
+}
+#scholarship-div{
+    background: url('https://storage.googleapis.com/collegekhabri/static//img/apply_for_scholarship.png');
+    background-size: 270px, 200px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 270px;
+    position: fixed;
+    bottom: 0px;
+    left: 5px;
+    z-index: 11;
+}
+#admission-assist-div{
+    background: url('https://storage.googleapis.com/collegekhabri/static//img/admission_assistance.png');
+    background-size: 270px, 200px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 270px;
+    position: fixed;
+    bottom: 0px;
+    right: 5px;
+    z-index: 11;
+}
+#scholarship-div:hover, #admission-assist-div:hover{
+    cursor: pointer;
+}
+#scholarship-div button{
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    background: none;
+    border: none;
+    background: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    color: white;
+}
+#admission-assist-div button{
+    position: absolute;
+    right: 247px;
+    top: -25px;
+    background: none;
+    border: none;
+    background: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    color: white;
+}
+#search_div{
+    //background: #37474f;
+    background-image: url(https://collegekhabri-website.s3.ap-south-1.amazonaws.com/static-assets/static-assets/iim-kozhikode.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+#main_heading{
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: Lato,Segoe UI,Helvetica,HelveticaNeue,Arial,sans-serif;
+}
+#sub_heading{
+    font-family: Lato,Segoe UI,Helvetica,HelveticaNeue,Arial,sans-serif;
+    color: white;
+}
+@media  only screen and (max-width : 728px) {
+    #search_div{
+        background-size: 130vw;
+    }
+}
+@media  only screen and (min-width : 992px){
+    #main_heading{
+        font-size: 3rem;
+    }
+}
+#float-btn{
+ position: fixed;
+ top: 260px;
+ right: -40px;
+ border-radius: 4px;
+ box-shadow: inset 0 0 5px #000;
+ padding: 8px;
+ background: #ffcc29;
+ z-index: 10000000000000;
+ transform: rotate(-90deg);
+ cursor: pointer;
+}
+#office-float-body{
+    position: fixed;
+    top: 150px;
+    right: -320px;
+    opacity: 1;
+    z-index: 10000000000000;
+    background-color:white;
+    width: 300px;
+    height: 70%;
+    overflow-y: scroll;
+    padding: 10px;
+    box-shadow:0px 0px 30px #000;
+}
+.scroll_to_bottom{
+    color: white;
+    bottom: 10px;
+}
+.white_section{
+    margin: 10px;
+}
+#wrapper{
+    background: #eee;
+}
+.card-hover:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+</style>
+<style type="text/css">
+.states-all-india, .states-andaman-and-nicobar-islands, .states-andhra-pradesh, .states-arunachal-pradesh, .states-assam,
+.states-bihar, .states-chandigarh, .states-chhattisgarh, .states-dadra-and-nagar-haveli, .states-daman-and-diu,
+.states-delhi, .states-goa, .states-gujarat, .states-haryana, .states-himachal-pradesh,
+.states-jammu-and-kashmir, .states-jharkhand, .states-karnataka, .states-kerala, .states-lakshadweep,
+.states-madhya-pradesh, .states-maharashtra, .states-manipur, .states-meghalya, .states-mizoram,
+.states-nagaland, .states-orissa, .states-punjab, .states-rajasthan, .states-sikkim,
+.states-tamil-nadu, .states-telangana, .states-tripura, .states-uttar-pradesh, .states-uttarakhand,
+.states-west-bengal
+{ display: inline-block; background: url('https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/all-states.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.states-all-india { background-position: -2px -0px; width: 60px; height: 60px; }
+.states-andaman-and-nicobar-islands { background-position: -64px -0px; width: 60px; height: 60px; }
+.states-andhra-pradesh { background-position: -126px -0px; width: 60px; height: 60px; }
+.states-arunachal-pradesh { background-position: -188px -0px; width: 60px; height: 60px; }
+.states-assam { background-position: -250px -0px; width: 60px; height: 60px; }
+.states-bihar { background-position: -312px -0px; width: 60px; height: 60px; }
+.states-chandigarh { background-position: -2px -62px; width: 60px; height: 60px; }
+.states-chhattisgarh { background-position: -64px -62px; width: 60px; height: 60px; }
+.states-dadra-and-nagar-haveli { background-position: -126px -62px; width: 60px; height: 60px; }
+.states-daman-and-diu { background-position: -188px -62px; width: 60px; height: 60px; }
+.states-delhi { background-position: -250px -62px; width: 60px; height: 60px; }
+.states-goa { background-position: -312px -62px; width: 60px; height: 60px; }
+.states-gujarat { background-position: -2px -124px; width: 60px; height: 60px; }
+.states-haryana { background-position: -64px -124px; width: 60px; height: 60px; }
+.states-himachal-pradesh { background-position: -126px -124px; width: 60px; height: 60px; }
+.states-jammu-and-kashmir { background-position: -188px -124px; width: 60px; height: 60px; }
+.states-jharkhand { background-position: -250px -124px; width: 60px; height: 60px; }
+.states-karnataka { background-position: -312px -124px; width: 60px; height: 60px; }
+.states-kerala { background-position: -2px -186px; width: 60px; height: 60px; }
+.states-lakshadweep { background-position: -64px -186px; width: 60px; height: 60px; }
+.states-madhya-pradesh { background-position: -126px -186px; width: 60px; height: 60px; }
+.states-maharashtra { background-position: -188px -186px; width: 60px; height: 60px; }
+.states-manipur { background-position: -250px -186px; width: 60px; height: 60px; }
+.states-meghalya { background-position: -312px -186px; width: 60px; height: 60px; }
+.states-mizoram { background-position: -2px -248px; width: 60px; height: 60px; }
+.states-nagaland { background-position: -64px -248px; width: 60px; height: 60px; }
+.states-orissa { background-position: -126px -248px; width: 60px; height: 60px; }
+.states-punjab { background-position: -188px -248px; width: 60px; height: 60px; }
+.states-rajasthan { background-position: -250px -248px; width: 60px; height: 60px; }
+.states-sikkim { background-position: -312px -248px; width: 60px; height: 60px; }
+.states-tamil-nadu { background-position: -2px -310px; width: 60px; height: 60px; }
+.states-telangana { background-position: -64px -310px; width: 60px; height: 60px; }
+.states-tripura { background-position: -126px -310px; width: 60px; height: 60px; }
+.states-uttar-pradesh { background-position: -188px -310px; width: 60px; height: 60px; }
+.states-uttarakhand { background-position: -250px -310px; width: 60px; height: 60px; }
+.states-west-bengal { background-position: -312px -310px; width: 60px; height: 60px; }
+/* carousel setting start */
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.carousel-control {
+    width: 8%;
+    width: 0px;
+}
+.carousel-control.left,
+.carousel-control.right {
+    margin-right: 40px;
+    margin-left: 32px;
+    background-image: none;
+    opacity: 1;
+}
+.carousel-control > a > span {
+    color: white;
+      font-size: 29px !important;
+}
+
+.carousel-col {
+    position: relative;
+    min-height: 1px;
+    padding: 5px;
+    float: left;
+ }
+
+ .active > div { display:none; }
+ .active > div:first-child { display:block; }
+
+/*xs*/
+@media (max-width: 767px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev            { left: -50%; }
+  .carousel-col                { width: 50%; }
+    .active > div:first-child + div { display:block; }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev            { left: -50%; }
+  .carousel-col                { width: 50%; }
+    .active > div:first-child + div { display:block; }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner .active.left { left: -33%; }
+  .carousel-inner .active.right { left: 33%; }
+    .carousel-inner .next        { left:  33%; }
+    .carousel-inner .prev            { left: -33%; }
+  .carousel-col                { width: 33%; }
+    .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+  .carousel-inner .active.left { left: -25%; }
+  .carousel-inner .active.right{ left:  25%; }
+    .carousel-inner .next        { left:  25%; }
+    .carousel-inner .prev            { left: -25%; }
+  .carousel-col                { width: 25%; }
+    .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+    .active > div:first-child + div + div + div { display:block; }
+}
+
+.block {
+    width: 306px;
+    height: 230px;
+}
+
+.red {background: red;}
+
+.blue {background: blue;}
+
+.green {background: green;}
+
+.yellow {background: yellow;}
+.tt {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tt .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    left: 45px;
+    top: 5px;
+    font-size: 11px;
+    line-height: 14px;
+}
+.tt .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tt:hover .tooltiptext {
+    visibility: visible;
+}
+/* carousel setting end */
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #fff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /*padding-top: 60px;  Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    padding-top: 60px;
+    line-height: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.ask-dido-floating{
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:20px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    animation: shake 3s cubic-bezier(.36,.07,.19,.97) both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes  shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+</style>
+                <style>
+                .footer-links {
+                    color: #ffcc29;!important;
+                }
+                .footer-links:hover{
+            color: #fff;!important;
+            margin: 5px;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+
+
+        .nav-desk-link > a:hover {
+            color : #084ce9;
+            margin-left: 5px;
+            transition:0.2s;
+        }
+
+        .change_color:hover{
+            background: #fff;
+            transition: 0.5s;
+        }
+        .change_color{
+            background-color: #2ECC71;
+            padding: 5px;
+        }
+        a{
+            color: #000;
+        }
+        a:hover{
+            font-size:18px;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        </style>
+        </head>
+        <body class="sticky_header">
+
+        <div id="wrapper">
+
+
+                                                    <div class="hidden-xs hidden-sm animated zoomInDown" style="position: absolute;z-index: 999;margin: 0px auto;width: 250px;left: 0px;right: 0px;text-align: center;">
+    <p class="hk-card_full change_color" style="margin:20px 0px; font-size: 18px;padding: 10px;">
+        Counselor<br>
+        <i class="fa fa-thumbsup"></i> Call now 9869105740!<br />
+    </p>
+</div>
+
+<div class="header-wrapper before-sticky">
+    <header id="masthead" class="site-header">
+        <div class="row-nav">
+            <div class="large-12 columns header-container">
+                <div class="mobile-menu show-for-small">
+                    <a href="#jPanelMenu" class="off-canvas-overlay" id="text-decoration" data-pos="left" data-color="light"><span class="icon-menu" ></span></a>
+                </div><!-- end mobile menu -->
+
+                <div id="logo" class="logo-left">
+                    <a href="https://collegekhabri.com" rel="home">
+                                                    <img src="" alt="" class="header_logo"/>
+                                            </a>
+                </div><!-- .logo -->
+
+                <div class="right-links">
+                    <ul  class="header-nav">
+                                                    <li class="account-dropdown hide-for-small">
+                                <a href="" style="color: #000;border-radius: 25px !important;font-weight: 600;border: 1px solid #eee;transition: 0.4s;padding-left: 15px;padding-right: 15px;margin-top: 20px;background: #eee;box-shadow: 1px 1px 1px #ccc;border-radius: 25px;" class="nav-top-link nav-top-not-logged-in btn btn-block btn-md bbb  btn-tarazu ">Login &nbsp;
+                                    <img src="../static/images/logo_login.png" alt="CollegeKhabri Login" style="margin-top: -5px;height: 30px;">
+                                </a>
+                            </li>
+                            <li class="account-dropdown hide-for-small">
+                                <a href="" style="color: #000;border-radius: 25px !important;font-weight: 600;border: 1px solid #eee;transition: 0.4s;padding-left: 15px;padding-right: 15px;margin-top: 20px;background: #eee;box-shadow: 1px 1px 1px #ccc;border-radius: 25px;" class="nav-top-link nav-top-not-logged-in btn btn-block btn-md bbb  btn-tarazu ">Register &nbsp;
+                                    <img src="../static/images/registration.png" alt="CollegeKhabri Register" style="margin-top: -5px;height: 30px;">
+                                </a>
+                            </li>
+                                            </ul><!-- .header-nav -->
+                </div><!-- .right-links -->
+            </div><!-- .large-12 -->
+        </div><!-- .row -->
+    </header><!-- .header -->
+<!--    ----------------------------------------------------------------------------------------------------->
+
+
+        <div class="sticky-wrapper" style=""><div class="wide-nav 1 nav-center" style="background: #2ECC71">
+        <div class="row-nav">
+            <div class="large-12 columns">
+                <div class="nav-wrapper">
+                    <ul id="site-navigation" class="header-nav">
+                        <li class="menu-parent-item"><a href="/" style="margin: 10px 10px;">Home <i class="fa fa-home"></i></a></li>
+                        </li>
+                        <li class="menu-parent-item"><a href="#" class="nav-top-link">Engineering</a>
+                            <div class="nav-dropdown no-arrow" style="display: none; margin-left: -70px; width: 1706px; left: auto; right: 0px; max-width: 1064px;">
+                                <div class="row">
+                                </div>
+                                <div class="tab-content ">
+                                    <div role="tabpanel" class="tab-pane active nav-dropdown no-arrow" id="home1" style="margin-left: -70px; width: 1746px; left: auto; right: 0px; display: none; max-width: 1064px;">
+                                        <ul>
+                                                                                        <li class=" menu-parent-item "><a href="#"><strong>Search by State</strong></a>
+                                                <div class="nav-column-links">
+                                                    <ul>
+                                                                                                                    <li><a href="/search/engineering/state/madhya-pradesh" alt="Engineering Colleges in Madhya Pradesh">Madhya Pradesh</a></li>
+                                                                                                                    <li><a href="/search/engineering/state/tamil-nadu" alt="Engineering Colleges in Tamil Nadu">Tamil Nadu</a></li>
+                                                                                                                    <li><a href="/search/engineering/state/maharashtra" alt="Engineering Colleges in Maharashtra">Maharashtra</a></li>
+                                                                                                                    <li><a href="/search/engineering/state/uttar-pradesh" alt="Engineering Colleges in Uttar Pradesh">Uttar Pradesh</a></li>
+                                                                                                                    <li><a href="/search/engineering/state/karnataka" alt="Engineering Colleges in Karnataka">Karnataka</a></li>
+                                                                                                                    <li><a href="/search/engineering/state/bihar" alt="Engineering Colleges in Bihar">Bihar</a></li>
+                                                                                                            </ul>
+                                                </div>
+                                            </li>
+                                                                                        <li class=" menu-parent-item "><a href="#"><strong>Search by State</strong></a>
+                                                <div class="nav-column-links">
+                                                    <ul>
+                                                                                                                    <li><a href="/search/engineering/state/delhi" alt="Engineering Colleges in Delhi">Delhi</a></li>
+                                                                                                                    <li><a href="/search/engineering/state/rajasthan" alt="Engineering Colleges in Rajasthan">Rajasthan</a></li>
+                                                                                                                    <li><a href="/search/engineering/state/punjab" alt="Engineering Colleges in Punjab">Punjab</a></li>
+                                                                                                                    <li><a href="/search/engineering/state/west-bengal" alt="Engineering Colleges in West Bengal">West Bengal</a></li>
+                                                                                                                    <li><a href="/search/engineering/state/jharkhand" alt="Engineering Colleges in Jharkhand">Jharkhand</a></li>
+                                                                                                                    <li><a href="/search/engineering/state/assam" alt="Engineering Colleges in Assam">Assam</a></li>
+                                                                                                            </ul>
+                                                </div>
+                                            </li>
+                                                                                        <li class=" menu-parent-item "><a href="#"><strong>Search by Subject</strong></a>
+                                                <div class="nav-column-links">
+                                                    <ul>
+                                                                                                                    <li><a href="/search/engineering/course/civil-engineering" alt="CIVIL ENGINEERING Colleges">CIVIL ENGINEERING</a></li>
+                                                                                                                    <li><a href="/search/engineering/course/computer-engineering" alt="COMPUTER ENGINEERING Colleges">COMPUTER ENGINEERING</a></li>
+                                                                                                                    <li><a href="/search/engineering/course/electrical-engineering" alt="ELECTRICAL ENGINEERING Colleges">ELECTRICAL ENGINEERING</a></li>
+                                                                                                                    <li><a href="/search/engineering/course/mechanical-engineering" alt="MECHANICAL ENGINEERING Colleges">MECHANICAL ENGINEERING</a></li>
+                                                                                                                    <li><a href="/search/engineering/course/information-technology" alt="INFORMATION TECHNOLOGY Colleges">INFORMATION TECHNOLOGY</a></li>
+                                                                                                            </ul>
+                                                </div>
+                                            </li>
+                                                                                        <li class=" menu-parent-item "><a href="#"><strong>Search by Subject</strong></a>
+                                                <div class="nav-column-links">
+                                                    <ul>
+                                                                                                                    <li><a href="/search/engineering/course/electronics-and-communications-engineering" alt="ELECTRONICS AND COMMUNICATIONS ENGINEERING Colleges">ELECTRONICS AND COMMUNICATIONS ENGINEERING</a></li>
+                                                                                                                    <li><a href="/search/engineering/course/electronics-communication-engg" alt="ELECTRONICS &amp; COMMUNICATION ENGG Colleges">ELECTRONICS &amp; COMMUNICATION ENGG</a></li>
+                                                                                                                    <li><a href="/search/engineering/course/computer-science-engineering" alt="COMPUTER SCIENCE &amp; ENGINEERING Colleges">COMPUTER SCIENCE &amp; ENGINEERING</a></li>
+                                                                                                                    <li><a href="/search/engineering/course/electrical-and-electronics-engineering" alt="ELECTRICAL AND ELECTRONICS ENGINEERING Colleges">ELECTRICAL AND ELECTRONICS ENGINEERING</a></li>
+                                                                                                            </ul>
+                                                </div>
+                                            </li>
+                                                                                        <li class="menu-parent-item "><a href="#"><strong>Search by City</strong></a>
+                                                <div class="nav-column-links">
+                                                    <ul>
+                                                                                                                    <li><a href="/search/engineering/city/bhopal" alt="Engineering Colleges in bhopal">Bhopal</a></li>
+                                                                                                                    <li><a href="/search/engineering/city/indore" alt="Engineering Colleges in indore">Indore</a></li>
+                                                                                                                    <li><a href="/search/engineering/city/pune" alt="Engineering Colleges in pune">Pune</a></li>
+                                                                                                                    <li><a href="/search/engineering/city/bangalore" alt="Engineering Colleges in bangalore">Bangalore</a></li>
+                                                                                                                    <li><a href="/search/engineering/city/chennai" alt="Engineering Colleges in chennai">Chennai</a></li>
+                                                                                                                    <li><a href="/search/engineering/city/nagpur" alt="Engineering Colleges in nagpur">Nagpur</a></li>
+                                                                                                            </ul>
+                                                </div>
+                                            </li>
+                                                                                        <li class="menu-parent-item "><a href="#"><strong>Search by City</strong></a>
+                                                <div class="nav-column-links">
+                                                    <ul>
+                                                                                                                    <li><a href="/search/engineering/city/mumbai" alt="Engineering Colleges in mumbai">Mumbai</a></li>
+                                                                                                                    <li><a href="/search/engineering/city/hyderabad" alt="Engineering Colleges in hyderabad">Hyderabad</a></li>
+                                                                                                                    <li><a href="/search/engineering/city/kolkata" alt="Engineering Colleges in kolkata">Kolkata</a></li>
+                                                                                                                    <li><a href="/search/engineering/city/jaipur" alt="Engineering Colleges in jaipur">Jaipur</a></li>
+                                                                                                                    <li><a href="/search/engineering/city/lucknow" alt="Engineering Colleges in lucknow">Lucknow</a></li>
+                                                                                                                    <li><a href="/search/engineering/city/kanpur" alt="Engineering Colleges in kanpur">Kanpur</a></li>
+                                                                                                            </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane nav-dropdown no-arrow" id="profile1" style="display: none; margin-left: -70px; width: 1746px; left: auto; right: 0px; max-width: 1064px;">
+                                        <ul>
+                                            <li class=" menu-parent-item "><a href="#">Browes by Subject</a>
+                                                <div class="nav-column-links">
+                                                    <ul>
+                                                        <li><a href="">COMPUTER SCIENCE</a></li>
+                                                        <li><a href="">ELECTRONICS &amp; COMMUNICATION</a></li>
+                                                        <li><a href="">MECHANICAL ENGINEERING</a></li>
+                                                        <li><a href="">CIVIL ENGINEERING</a></li>
+                                                        <li><a href="">ELECTRICAL &amp; ELECTRONICS</a></li>
+                                                        <li><a href="">INFORMATION &amp; TECHNOLOGY</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="menu-parent-item "><a href="#">Browes by City</a>
+                                                <div class="nav-column-links">
+                                                    <ul>
+                                                        <li><a href="">Chennai</a></li>
+                                                        <li><a href="">Hyderabad</a></li>
+                                                        <li><a href="">Bangalore</a></li>
+                                                        <li><a href="">Pune</a></li>
+                                                        <li><a href="">Bhopal</a></li>
+                                                        <li><a href="">Indore</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="menu-parent-item "><a href="#">Browes by City</a>
+                                                <div class="nav-column-links">
+                                                    <ul>
+                                                        <li><a href="">Chennai</a></li>
+                                                        <li><a href="">Hyderabad</a></li>
+                                                        <li><a href="">Bangalore</a></li>
+                                                        <li><a href="">Pune</a></li>
+                                                        <li><a href="">Bhopal</a></li>
+                                                        <li><a href="">Indore</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="menu-parent-item "><a href="#">Browes by City</a>
+                                                <div class="nav-column-links">
+                                                    <ul>
+                                                        <li><a href="">Chennai</a></li>
+                                                        <li><a href="">Hyderabad</a></li>
+                                                        <li><a href="">Bangalore</a></li>
+                                                        <li><a href="">Pune</a></li>
+                                                        <li><a href="">Bhopal</a></li>
+                                                        <li><a href="">Indore</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div><!-- .nav-wrapper -->
+            </div><!-- .large-12 -->
+        </div><!-- .row -->
+    </div></div>
+
+                        <style>
+.pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5;
+    color: #e53935;
+}
+@-webkit-keyframes pulsate {
+    0% {
+        transform: scale(1,1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2,1.2);
+        opacity: 1.0;
+    }
+    100% {
+        transform: scale(1,1);
+        opacity: 0.5;
+    }
+}
+
+</style>
+<!-- Mobile Popup -->
+<!--<div id="jPanelMenu" class="mfp-hide">-->
+<!--    <div class="mobile-sidebar">-->
+
+<!--            <img src="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/assets/img/collegekhabri-logo.png" alt="CollegeKhabri Logo" class="header_logo" style="padding: 20px;width: 100%;"/>-->
+<!--                <ul class="mobile-main-menu">-->
+<!--                            <li><a href="https://collegekhabri.com/login">Login</a></li>-->
+<!--                <li><a href="https://collegekhabri.com/register">Register</a></li>-->
+<!--                        <li class="current_page_ancestor menu-item-has-children"><a href="#">Engineering</a>-->
+<!--                <ul class="sub-menu">-->
+<!--                    <li class=""><a href="#">Browse by State</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                                                                                    <li><a href="/search/engineering/state/madhya-pradesh" alt="Engineering Colleges in Madhya Pradesh">Madhya Pradesh</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/state/tamil-nadu" alt="Engineering Colleges in Tamil Nadu">Tamil Nadu</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/state/maharashtra" alt="Engineering Colleges in Maharashtra">Maharashtra</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/state/uttar-pradesh" alt="Engineering Colleges in Uttar Pradesh">Uttar Pradesh</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/state/karnataka" alt="Engineering Colleges in Karnataka">Karnataka</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/state/bihar" alt="Engineering Colleges in Bihar">Bihar</a></li>-->
+<!--                                                                                </ul>-->
+<!--                    </li>-->
+<!--                    <li class=""><a href="#">Browse by Subject</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                                                                                    <li><a href="/search/engineering/course/civil-engineering" alt="CIVIL ENGINEERING Colleges">CIVIL ENGINEERING</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/course/computer-engineering" alt="COMPUTER ENGINEERING Colleges">COMPUTER ENGINEERING</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/course/electrical-engineering" alt="ELECTRICAL ENGINEERING Colleges">ELECTRICAL ENGINEERING</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/course/mechanical-engineering" alt="MECHANICAL ENGINEERING Colleges">MECHANICAL ENGINEERING</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/course/information-technology" alt="INFORMATION TECHNOLOGY Colleges">INFORMATION TECHNOLOGY</a></li>-->
+<!--                                                                                </ul>-->
+<!--                    </li>-->
+<!--                    <li class=""><a href="#">Browse by City</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                                                                                    <li><a href="/search/engineering/city/bhopal" alt="Engineering Colleges in bhopal">Bhopal</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/city/indore" alt="Engineering Colleges in indore">Indore</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/city/pune" alt="Engineering Colleges in pune">Pune</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/city/bangalore" alt="Engineering Colleges in bangalore">Bangalore</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/city/chennai" alt="Engineering Colleges in chennai">Chennai</a></li>-->
+<!--                                                                                                                    <li><a href="/search/engineering/city/nagpur" alt="Engineering Colleges in nagpur">Nagpur</a></li>-->
+<!--                                                                                </ul>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li class="current_page_ancestor menu-item-has-children"><a href="#">MBBS</a>-->
+<!--                <ul class="sub-menu">-->
+<!--                    <li class=""><a href="#">Madhya Pradesh</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                            <li><a href="/bhopal/mbbs/chirayu-medical-college-and-hospital" alt="Chirayu Medical College and Hospital">Chirayu Medical College and Hospital</a></li>-->
+<!--                            <li><a href="/bhopal/mbbs/peoples-university-bhopal" alt="Peoples University, Bhopal">Peoples University, Bhopal</a></li>-->
+<!--                            <li><a href="/bhopal/mbbs/all-india-institute-of-medical-science" alt="All India Institute of Medical Sciences">All India Institute of Medical Sciences</a></li>-->
+<!--                            <li><a href="/indore/mbbs/dr-a-p-j-abdul-kalam-university-indore" alt="Dr. A. P. J. Abdul Kalam University">Dr. A. P. J. Abdul Kalam University</a></li>-->
+<!--                            <li><a href="/jabalpur/mbbs/netaji-subash-chandra-bose-medical-college" alt="Netaji Subash Chandra Bose Medical College">Netaji Subash Chandra Bose Medical College</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li class=""><a href="#">Chhattisgarh</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                            <li><a href="/bhilai/mbbs/ayush-and-health-science-university" alt="Ayush and Health Science University">Ayush and Health Science University</a></li>-->
+<!--                            <li><a href="/bilaspur/mbbs/dr-cv-raman-university" alt="Dr. C.V. Raman University">Dr. C.V. Raman University</a></li>-->
+<!--                            <li><a href="/raipur/mbbs/pg-college-of-nursing-bhilai" alt="PG College of Nursing, Bhilai">PG College of Nursing, Bhilai</a></li>-->
+<!--                            <li><a href="/bhilai/mbbs/disha-college" alt="Disha College">Disha College</a></li>-->
+<!--                            <li><a href="/bhilai/mbbs/chhattisgarh-university" alt="Chhattisgarh University">Chhattisgarh University</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li class=""><a href="#">Uttar Pradesh</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                            <li><a href="/bareilly/mbbs/king-georges-medical-university" alt="King Georges Medical University">King Georges Medical University</a></li>-->
+<!--                            <li><a href="/greaternoida/mbbs/institute-of-medical-sciences" alt="Institute of Medical Sciences">Institute of Medical Sciences</a></li>-->
+<!--                            <li><a href="/kanpur/mbbs/gsvm-medical-college" alt="GSVM Medical College">GSVM Medical College</a></li>-->
+<!--                            <li><a href="/lucknow/mbbs/mahatma-jyotiba-phule-rohilkhand-university" alt="Mahatma Jyotiba Phule Rohilkhand University">Mahatma Jyotiba Phule Rohilkhand University</a></li>-->
+<!--                            <li><a href="/varanasi/mbss/sharda-university" alt="Sharda University">Sharda University</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li class="current_page_ancestor menu-item-has-children"><a href="#">MBA / PGDM <span class="badge">new</span></a>-->
+<!--                <ul class="sub-menu">-->
+<!--                    <li class=""><a href="#">Browse by State</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                                                                                                                                <li><a href="/search/management/state/madhya-pradesh" alt="Management Colleges in Madhya Pradesh">Madhya Pradesh</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/state/rajasthan" alt="Management Colleges in Rajasthan">Rajasthan</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/state/punjab" alt="Management Colleges in Punjab">Punjab</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/state/uttar-pradesh" alt="Management Colleges in Uttar Pradesh">Uttar Pradesh</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/state/jharkhand" alt="Management Colleges in Jharkhand">Jharkhand</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/state/assam" alt="Management Colleges in Assam">Assam</a></li>-->
+<!--                                                                                </ul>-->
+<!--                    </li>-->
+<!--                    <li class=""><a href="#">Browes by Subject</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                                                                                    <li><a href="/search/management/course/post-graduate-diploma-in-management" alt="POST GRADUATE DIPLOMA IN MANAGEMENT Colleges">POST GRADUATE DIPLOMA IN MANAGEMENT</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/course/masters-of-applied-management" alt="MASTERS OF APPLIED MANAGEMENT Colleges">MASTERS OF APPLIED MANAGEMENT</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/course/masters-in-business-administration-general-management-" alt="MASTERS IN BUSINESS ADMINISTRATION (GENERAL MANAGEMENT) Colleges">MASTERS IN BUSINESS ADMINISTRATION (GENERAL MANAGEMENT)</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/course/master-in-business-administration-general-management-" alt="MASTER IN BUSINESS ADMINISTRATION(GENERAL MANAGEMENT) Colleges">MASTER IN BUSINESS ADMINISTRATION(GENERAL MANAGEMENT)</a></li>-->
+<!--                                                                                </ul>-->
+<!--                    </li>-->
+<!--                    <li class=""><a href="#">Browes by City</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                                                                                    <li><a href="/search/management/city/pune" alt="Management Colleges in pune">Pune</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/city/hyderabad" alt="Management Colleges in hyderabad">Hyderabad</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/city/kolkata" alt="Management Colleges in kolkata">Kolkata</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/city/jaipur" alt="Management Colleges in jaipur">Jaipur</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/city/lucknow" alt="Management Colleges in lucknow">Lucknow</a></li>-->
+<!--                                                                                                                    <li><a href="/search/management/city/kanpur" alt="Management Colleges in kanpur">Kanpur</a></li>-->
+<!--                                                                                </ul>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li class="current_page_ancestor menu-item-has-children"><a href="#">Phramacy</a>-->
+<!--                <ul class="sub-menu">-->
+<!--                    <li class=""><a href="#">Browse by State</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/state/assam" alt="Pharmacy Colleges in Assam">Assam</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/state/uttar-pradesh" alt="Pharmacy Colleges in Uttar Pradesh">Uttar Pradesh</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/state/tamil-nadu" alt="Pharmacy Colleges in Tamil Nadu">Tamil Nadu</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/state/maharashtra" alt="Pharmacy Colleges in Maharashtra">Maharashtra</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/state/karnataka" alt="Pharmacy Colleges in Karnataka">Karnataka</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/state/bihar" alt="Pharmacy Colleges in Bihar">Bihar</a></li>-->
+<!--                                                                                </ul>-->
+<!--                    </li>-->
+<!--                    <li class=""><a href="#">Browes by Subject</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/course/pharmacy" alt="PHARMACY Colleges">PHARMACY</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/course/diploma-medical-lab-technology" alt="DIPLOMA MEDICAL LAB TECHNOLOGY Colleges">DIPLOMA MEDICAL LAB TECHNOLOGY</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/course/pharmaceutical-chemistry" alt="PHARMACEUTICAL CHEMISTRY Colleges">PHARMACEUTICAL CHEMISTRY</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/course/industrial-pharmacy" alt="INDUSTRIAL PHARMACY Colleges">INDUSTRIAL PHARMACY</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/course/pharmaceutical-analysis" alt="PHARMACEUTICAL ANALYSIS Colleges">PHARMACEUTICAL ANALYSIS</a></li>-->
+<!--                                                                                </ul>-->
+<!--                    </li>-->
+<!--                    <li class=""><a href="#">Browes by City</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/city/mumbai" alt="Pharmacy Colleges in mumbai">Mumbai</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/city/bhopal" alt="Pharmacy Colleges in bhopal">Bhopal</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/city/indore" alt="Pharmacy Colleges in indore">Indore</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/city/bangalore" alt="Pharmacy Colleges in bangalore">Bangalore</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/city/chennai" alt="Pharmacy Colleges in chennai">Chennai</a></li>-->
+<!--                                                                                                                    <li><a href="/search/pharmacy/city/nagpur" alt="Pharmacy Colleges in nagpur">Nagpur</a></li>-->
+<!--                                                                                </ul>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li class="current_page_ancestor menu-item-has-children"><a href="#">MCA</a>-->
+<!--                <ul class="sub-menu">-->
+<!--                    <li class="">-->
+<!--                    <a href="#">Browse by State</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                                                                                                            <li><a href="/search/mca/state/rajasthan" alt="MCA Colleges in Rajasthan">Rajasthan</a></li>-->
+<!--                                                                                                                    <li><a href="/search/mca/state/west-bengal" alt="MCA Colleges in West Bengal">West Bengal</a></li>-->
+<!--                                                                                                                    <li><a href="/search/mca/state/tamil-nadu" alt="MCA Colleges in Tamil Nadu">Tamil Nadu</a></li>-->
+<!--                                                                                                                    <li><a href="/search/mca/state/maharashtra" alt="MCA Colleges in Maharashtra">Maharashtra</a></li>-->
+<!--                                                                                                                    <li><a href="/search/mca/state/karnataka" alt="MCA Colleges in Karnataka">Karnataka</a></li>-->
+<!--                                                                                                                    <li><a href="/search/mca/state/bihar" alt="MCA Colleges in Bihar">Bihar</a></li>-->
+<!--                                                                                </ul>-->
+<!--                    </li>-->
+<!--                    <li class=""><a href="#">Browes by Subject</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                                                                                    <li><a href="/search/mca/course/masters-in-computer-applications" alt="MASTERS IN COMPUTER APPLICATIONS Colleges">MASTERS IN COMPUTER APPLICATIONS</a></li>-->
+<!--                                                                                                                    <li><a href="/search/mca/course/master-of-computer-applications" alt="MASTER OF COMPUTER APPLICATIONS Colleges">MASTER OF COMPUTER APPLICATIONS</a></li>-->
+<!--                                                                                                                    <li><a href="/search/mca/course/computer-applications" alt="COMPUTER APPLICATIONS Colleges">COMPUTER APPLICATIONS</a></li>-->
+<!--                                                                                </ul>-->
+<!--                    </li>-->
+<!--                    <li class=""><a href="#">Browes by City</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                                                    <li><a href="/search/mca/city/pune" alt="MCA Colleges in pune">Pune</a></li>-->
+<!--                                                    <li><a href="/search/mca/city/hyderabad" alt="MCA Colleges in hyderabad">Hyderabad</a></li>-->
+<!--                                                    <li><a href="/search/mca/city/indore" alt="MCA Colleges in indore">Indore</a></li>-->
+<!--                                                    <li><a href="/search/mca/city/bangalore" alt="MCA Colleges in bangalore">Bangalore</a></li>-->
+<!--                                                    <li><a href="/search/mca/city/chennai" alt="MCA Colleges in chennai">Chennai</a></li>-->
+<!--                                                    <li><a href="/search/mca/city/nagpur" alt="MCA Colleges in nagpur">Nagpur</a></li>-->
+<!--                                                </ul>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--                        <li class="current_page_ancestor"><a href="https://collegekhabri.com/scholarships">Scholarships</a>-->
+<!--                &lt;!&ndash; <ul class="sub-menu">-->
+<!--                <li class="">-->
+<!--                        <ul class="sub-menu">-->
+<!--                            <li><a href="/scholarship/athletic-scholarship">Athletic Scholarship</a></li>-->
+<!--                            <li><a href="/scholarship/merit-based-scholarship">Merit Based Scholarship</a></li>-->
+<!--                            <li><a href="/scholarship/minority-scholarship">Minority Scholarship</a></li>-->
+<!--                            <li><a href="/scholarship/scholarship-for-higher-secondary-school">Scholarship for higher secondary school</a></li>-->
+<!--                            <li><a href="/scholarship/scholarship-for-graduate-students">Scholarship for Graduate Students</a></li>-->
+<!--                            <li><a href="/scholarship/weird-scholarship">Weird Scholarship</a></li>-->
+<!--                            <li><a href="/scholarship/scholarship-for-undergraduate-students">Scholarship for Undergraduate Students</a></li>-->
+<!--                            <li><a href="/scholarship/school-dropout-scholarship">School Dropout Scholarship</a></li>-->
+<!--                            <li><a href="/scholarship/scholarship-by-state">Scholarship by State</a></li>-->
+<!--                            <li><a href="/scholarship/city-topper-scholarship">City Topper Scholarship</a></li>-->
+<!--                            <li><a href="/scholarship/school-topper-scholarship">School Topper Scholarship</a></li>-->
+<!--                            <li><a href="/scholarship/buddy-scholarship">Buddy Scholarship</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                </ul> &ndash;&gt;-->
+<!--            </li>-->
+<!--            <li class="current_page_ancestor"><a href="http://blog.collegekhabri.com">Blogs</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+
+<!--        &lt;!&ndash; <ul class="top-bar-mob">-->
+<!--            <li class="menu-item"><a href="#">Top Univercity</a></li>-->
+<!--            <li class="menu-item"><a href="#">Top Cources</a></li>-->
+<!--            <li class="menu-item"><a href="#">Colleges</a></li>-->
+<!--            <li class="menu-item"><a href="#">Exams</a></li>-->
+<!--            <li class="menu-item"><a href="#">Review</a></li>-->
+<!--            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item menu-item-698"><a href="#">More</a>-->
+<!--                <ul class="sub-menu">-->
+<!--                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-699"><a href="#">Cat Exam</a></li>-->
+<!--                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-700"><a href="#">Mat Exam</a></li>-->
+<!--                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-702"><a href="#">Jee Exam</a></li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--        </ul> &ndash;&gt;-->
+<!--    </div>&lt;!&ndash; inner &ndash;&gt;-->
+<!--</div>&lt;!&ndash; #mobile-menu &ndash;&gt;            </div>-->
+<!--    <style>-->
+<!--	.hover-thing:hover{-->
+<!--		transform: scaleY(1.1);-->
+<!--	}-->
+<!--	#pan {-->
+<!--		background: #fff;-->
+<!--	}-->
+<!--	/* #pan:hover{-->
+<!--		background: #ffcc29;-->
+<!--	} */-->
+<!--</style>-->
+<!--<div class="col-lg-12 text-center" id="pan" style="z-index: 1;">-->
+<!--	<h3>Get Free Educational Advice from our Career Counsellor</h3>-->
+<!--	<p>75% student find their session to be a game changer</p>-->
+<!--	<h4 style="margin: 30px auto;"><a class="hover-thing" style="background: #2d363f;padding: 10px; border-radius: 50px; border: 2px solid #2d363f; color: #000; font-weight: lighter; color: #fff; font-size: 15px;" data-toggle="modal" data-target="#are_you_confused"><i class="fa fa-calendar" style="padding: 5px; border-radius: 50px; background: #ffcc29; color: #2d363f;"></i> Book Appointment</a></h4>-->
+<!--	<h4 style="margin: 30px auto;"><a class="hover-thing" style="background: #2d363f;padding: 10px; border-radius: 50px; border: 2px solid #2d363f; color: #000; font-weight: lighter; color: #fff; font-size: 15px;" href="tel:09111400222"><i class="fa fa-phone" style="padding: 5px; border-radius: 50px; background: #ffcc29; color: #2d363f;"></i> Student Helpline 9111400222</a></h4>-->
+<!--</div>-->
+<!--<footer class="footer-distributed">-->
+<!--	<div class="hk-container">-->
+<!--		<div class="row">-->
+<!--			<div class="col-lg-12 text-center" style="margin-top: 40px; font-weight: lighter; color: #fff;">-->
+<!--				<a class="footer-links" href="https://collegekhabri.com/about-us">About Us </a><span>|</span>-->
+<!--				<a class="footer-links" href="https://collegekhabri.com/contact-us">Contact Us </a><span>|</span>-->
+<!--				<a class="footer-links" href="https://collegekhabri.com/advertise-with-us">Advertise with Us </a><span>|</span>-->
+<!--				<a class="footer-links" href="https://collegekhabri.com/faq">FAQ </a><span>|</span>-->
+<!--				<a class="footer-links" href="https://collegekhabri.com/careers">Careers </a><span>|</span>-->
+<!--				<a class="footer-links" href="https://collegekhabri.com/privacy">Privacy </a><span>|</span>-->
+<!--				<a class="footer-links" href="https://collegekhabri.com/html-sitemap">Sitemap </a><span>|</span>-->
+<!--				<a class="footer-links" href="https://blog.collegekhabri.com?utm_source=main_site_footer" >Blog </a>-->
+<!--				&lt;!&ndash; <a class="footer-links" href="https://collegekhabri.com/internship/">Internship </a><span>|</span> &ndash;&gt;-->
+<!--				&lt;!&ndash; <a class="footer-links" href="https://collegekhabri.com/news/">Latest News</a> &ndash;&gt;-->
+<!--					&lt;!&ndash; <a class="footer-links"  href="https://collegekhabri.com/feedback">Feedback |</a>-->
+<!--						<a class="footer-links"  href="https://collegekhabri.com/complaints">Complaint |</a>  &ndash;&gt;-->
+<!--						&lt;!&ndash; <a class="footer-links"  href="#">Terms And Conditions |</a> &ndash;&gt;-->
+<!--						&lt;!&ndash; <a class="footer-links"  href="https://collegekhabri.com/terms-and-conditions">Terms And Conditions |</a>  &ndash;&gt;-->
+<!--						&lt;!&ndash; <a class="footer-links"  href="https://collegekhabri.com/add-your-college">Add Your College |</a>  &ndash;&gt;-->
+<!--						&lt;!&ndash; <a class="footer-links"  href="#">Add Your College |</a> &ndash;&gt;-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			&lt;!&ndash;<div style="float: right;margin: -20px 50px -90px 0px;"><a target="_blank" href="http://www.alexa.com/siteinfo/www.collegekhabri.com"><script type='text/javascript' src='http://xslt.alexa.com/site_stats/js/s/a?url=www.collegekhabri.com'></script></a></div>&ndash;&gt;-->
+<!--			<div class="row text-center" style="padding: 10px;">-->
+<!--				<a style="color:#ffcc29;margin: 10px;" target="_blank" href="//facebook.com/collegekhabri"><i class="fa fa-2x fa-facebook-official"></i></a>-->
+<!--				<a style="color:#ffcc29;margin: 10px;" target="_blank" href="//twitter.com/collegekhabri"><i class="fa fa-2x fa-twitter"></i></a>-->
+<!--				<a style="color:#ffcc29;margin: 10px;" target="_blank" href="//instagram.com/collegekhabri"><i class="fa fa-2x fa-instagram"></i></a>-->
+<!--			</div>-->
+<!--			<div class="row">-->
+<!--				<div style="font-weight: lighter; color: #eee;" class="col-lg-12 text-center">All Rights Reserved. Copyright &copy; <span style="color: #ffcc29;">CollegeKhabri.com</span> 2019 Venture of <span style="color: #ffcc29">Dirasa Pvt. Ltd.</span></div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</footer>    <script src="//code.jquery.com/jquery-2.1.4.min.js?v=1.0.1"></script>-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js?v=1.0.1"></script>-->
+        <!-- https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js -->
+    </div>
+        </div>
+
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js?v=1.0.1"></script>
+    <script src="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/assets/js/modernizr.min.js?v=1.0.1"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js?v=1.0.1"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js?v=1.0.1"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.7/jquery.viewportchecker.min.js?v=1.0.1"></script>
+    <script src="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/bootstrap-toggle.min.js?v=1.0.1"></script>
+    <script src="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/countUp.min.js?v=1.0.1"></script>
+    <script src="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/jQuery-plugin-progressbar.min.js?v=1.0.1"></script>
+    <script src="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/college_tab.min.js?v=1.0.1"></script>
+    <script src="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/show_more.min.js?v=1.0.1"></script>
+    <script src="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/star-rating.min.js?v=1.0.1"></script>
+    <!-- <script src="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/assets/js/main.min.js?v=1.0.1"></script>-->
+
+    <script src="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/assets/js/main.js?v=1.0.1"></script>
+    <script src="https://collegekhabri-website.s3.ap-south-1.amazonaws.com/public_folder/asset/jquery.star-rating-svg.min.js?v=1.0.1"></script>
+    <script src="//cdn.jsdelivr.net/sweetalert2/6.3.2/sweetalert2.min.js?v=1.0.1"></script>
+    <script>
+            </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-91722100-1', 'auto');
+      ga('send', 'pageview');
+
+  // $("body").on("contextmenu",function(e){return false;});
+</script>
+
+<script>
+  // var OneSignal = window.OneSignal || [];
+  // OneSignal.push(function() {
+  //   OneSignal.init({
+  //     appId: "7c78c3fb-e9a1-4033-819d-36bc3ecf0a98",
+  //   });
+  // });
+</script>
+<script>
+    $('[data-toggle="tooltip"]').tooltip();
+    function rightSlideIn( )
+    {
+     $("#office-float-body").animate(
+     {
+         right : "0px"
+     },500);
+     $("#float-btn").animate(
+     {
+        right :"260px"
+    },500);
+ }
+
+ function reset( )
+ {
+     $("#office-float-body").animate(
+     {
+         right: "-320px"
+     },500);
+     $("#float-btn").animate(
+     {
+        right :"-40px"
+    },500);
+ }
+
+</script>
+<script type="text/javascript">
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav").style.paddingTop = "60px";
+        document.getElementById("mySidenav").style.paddingLeft = "10px";
+        document.getElementById("mySidenav").style.paddingRight = "10px";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("mySidenav").style.paddingTop = "0";
+        document.getElementById("mySidenav").style.paddingLeft = "0";
+        document.getElementById("mySidenav").style.paddingRight = "0";
+    }
+    function hideDiv(id){
+        $('#' + id).addClass('animated bounceOutLeft');
+        event.stopPropagation();
+    }
+    var user_location_city = null;
+    $(function(){
+        $('#btnbtn').on('click', function(){
+          $('#area2').show();
+          $('#area1').hide();
+      });
+    });
+    openSearch(event, 'search');
+    $("#search_state").change(function(){
+        if($(this).val()!==""){
+            $.ajax({
+                url : "get-select-city",
+                type: "GET",
+                data : "state="+$(this).val(),
+                contentType: false,
+                cache: false,
+                processData:false
+            }).done(function(res){
+             $('#search_city').html(res);
+         });
+        }
+    });
+
+
+    $("#get_course_by_stream").change(function(){
+
+        $.ajax({
+            url : "get-course-by-stream",
+            type: "GET",
+            data : "stream_id="+$(this).val(),
+            contentType: false,
+            cache: false,
+            processData:false
+        }).done(function(res){
+         $('#course_by_stream').html(res);
+     });
+    });
+    /*tabs script*/
+    openCity(event, 'management');
+    $('#college_query').keyup(function(event){
+        if(event.keyCode === 13) {
+            var college_query = $('#college_query').val();
+            if(college_query.length > 0) {
+                window.location.href = '/search/query/' + encodeURI(college_query);
+            } else {
+                alert('Please type the college name');
+            }
+        } else {
+            var college_query = $('#college_query').val().toLowerCase();
+            if(college_query.length > 0) {
+                search_data = {'_token':'pGe7LdtvpgFec3cwRk3mj3wL6XZ9xJ4aNmQm5b1h','college_name':college_query,'limit':5};
+                $.ajax({
+                    type:'get',
+                    url:'/parse/get-colleges',
+                    data:search_data,
+                    success:function(data){
+                        var lis = "<ul>";
+                        var comeon = "";
+                        if(data.length > 0){
+                                // college found
+                                $.each(data, function(index, value) {
+                                    lis += '<li><a href="' + value.college_url +'">' + value.college_name + '</a></li>';
+                                });
+                                lis += '</ul>';
+                                $('#autoComplete').css('display','block').html(lis);
+                            } else {
+                                // college not found
+                            }
+                        }
+                    });
+            } else {
+                $('#autoComplete').css('display','none')
+            }
+        }
+    });
+
+    function searchCollege() {
+        var college_query = $('#college_query').val();
+        if(college_query.length > 0) {
+            window.location.href = '/search/query/' + encodeURI(college_query);
+        } else {
+            alert('Please type the college name');
+        }
+    }
+
+    $('#search_btn').click(function(){
+     var college_query = $('#college_query').val();
+     if(college_query.length > 0) {
+        window.location.href = '/search/query/' + encodeURI(college_query);
+    } else {
+        alert('Please type the college name');
+    }
+});
+
+    $('.search_by_location').click(function() {
+        var state = $('#search_state').val();
+        var city = $('#search_city').val();
+        if(state != 0 && city != 0) {
+            window.location.href = '/search/' + city;
+        } else {
+            alert('Please select state and city');
+        }
+    });
+
+    $('.search_by_stream').click(function() {
+        var stream = $('#sel1').val();
+        window.location.href = '/search/' + stream;
+    });
+
+        // get user location
+        // turned off user location
+        // var x = document.getElementById("demo");
+        // getLocation();
+        // function getLocation() {
+        //     if (navigator.geolocation) {
+        //         navigator.geolocation.getCurrentPosition(showPosition,showError);
+        //     } else {
+        //         alert("Geolocation is not supported by this browser.");
+        //     }
+        // }
+        // function showPosition(position) {
+        //     var lat = position.coords.latitude;
+        //     var lon = position.coords.longitude;
+        //     getAddress(lat, lon).then(console.log).catch(console.error);
+        // }
+        // function showError(error) {
+        //     switch(error.code) {
+        //         case error.PERMISSION_DENIED:
+        //         console.log("User denied the request for Geolocation.");
+        //         break;
+        //         case error.POSITION_UNAVAILABLE:
+        //         console.log("Location information is unavailable.");
+        //         break;
+        //         case error.TIMEOUT:
+        //         console.log("The request to get user location timed out.");
+        //         break;
+        //         case error.UNKNOWN_ERROR:
+        //         console.log("An unknown error occurred.");
+        //         break;
+        //     }
+        // }
+        // function getAddress (latitude, longitude) {
+        //     return new Promise(function (resolve, reject) {
+        //         var request = new XMLHttpRequest();
+
+        //         var method = 'GET';
+        //         var url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + latitude + ',' + longitude + '&key=AIzaSyCDWwOPTW36bxGTyX97BPh7a1SYmFVBEdU';
+        //         var async = true;
+
+        //         request.open(method, url, async);
+        //         request.onreadystatechange = function () {
+        //             if (request.readyState == 4) {
+        //                 if (request.status == 200) {
+        //                     var data = JSON.parse(request.responseText);
+        //                     var components = data.results[0].address_components;
+        //                     var state = components[components.length - 3].long_name;
+        //                     var city = components[components.length - 4].long_name;
+        //                     $('.user_location_city').val(city);
+        //                     $('#search_city option[value=' + convertToSlug(city) + ']').attr('selected','selected');
+        //                 }
+        //                 else {
+        //                     reject(request.status);
+        //                 }
+        //             }
+        //         };
+        //         request.send();
+        //     });
+        // };
+        function convertToSlug(Text)
+        {
+            return Text.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
+        }
+    </script>
+        <script>
+        // carousel script
+        $('.carousel[data-type="multi"] .item').each(function() {
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 0; i < 2; i++) {
+                next = next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+        // scrolling
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "https://collegekhabri.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://collegekhabri.com/search/query/{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    <script type="text/javascript">
+  window._mfq = window._mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.async = true;
+    mf.src = "//cdn.mouseflow.com/projects/d90e631b-648c-4946-9f7a-d310231e17cc.js?v=1.0.1";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5cec1f882135900bac12b84b/1du0jdqii';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>

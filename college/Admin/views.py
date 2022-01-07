@@ -169,3 +169,7 @@ def show_locations(request):
         'activate_college': 'active'
     }
     return render(request, 'Admin/show_locations.html', context)
+
+
+def front(request):
+    return render(request, 'Admin/front.html')
